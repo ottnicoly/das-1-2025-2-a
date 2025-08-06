@@ -56,3 +56,41 @@ Refere-se ao grau de dependência entre classes/módulos.
 | **Implementação** | 🔁 (seta pontilhada) | `Carro` implementa `Veículo`     |
 
 ---
+
+## 📅 05/08
+
+### ✅ Tópicos abordados:
+- SOLID
+
+---
+
+### 🔹 S — **Single Responsibility Principle**  
+> Uma classe, método ou função deve ter apenas **uma única responsabilidade** ou razão para mudar.
+
+---
+
+### 🔹 O — **Open/Closed Principle**  
+> Entidades (classes, métodos, módulos) devem estar **abertas para extensão** e **fechadas para modificação**.
+
+---
+
+### 🔹 L — **Liskov Substitution Principle**  
+> Subtipos devem poder substituir seus tipos base **sem alterar o comportamento esperado** do programa.  
+> Exemplo: Se `Retângulo` herda de `Forma`, ele deve poder ser usado onde `Forma` é esperado, sem causar efeitos colaterais.
+
+---
+
+### 🔹 I — **Interface Segregation Principle**  
+> Nenhuma classe deve ser forçada a implementar métodos que **não utiliza**.  
+> Melhor ter **interfaces pequenas e específicas** do que uma genérica com muitos métodos.
+
+---
+
+### 🔹 D — **Dependency Inversion Principle**  
+> Módulos de alto nível **não devem depender** de módulos de baixo nível. Ambos devem depender de **abstrações**.  
+> Exemplo: Em vez de `ClasseA` depender diretamente de `ClasseB`, ambas dependem de uma **interface comum**.
+
+---
+
+## ✨ Observações
+> Esse repositório é atualizado conforme o andamento da disciplina e novos conteúdos são introduzidos.
