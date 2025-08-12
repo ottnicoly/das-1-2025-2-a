@@ -2,9 +2,12 @@
 
 Anotações de aula relacionadas a princípios de design e arquitetura de software e boas práticas de codificação.
 
-- Material de apoio:
+Material de apoio:
+
 https://integrada.minhabiblioteca.com.br/reader/books/9788577800469/pageid/0
+
 https://engsoftmoderna.info/cap6.html
+
 https://refactoring.guru/design-patterns
 
 ---
