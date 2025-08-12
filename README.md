@@ -2,6 +2,11 @@
 
 Anotações de aula relacionadas a princípios de design e arquitetura de software e boas práticas de codificação.
 
+- Material de apoio:
+https://integrada.minhabiblioteca.com.br/reader/books/9788577800469/pageid/0
+https://engsoftmoderna.info/cap6.html
+https://refactoring.guru/design-patterns
+
 ---
 
 ## 📅 04/08
@@ -85,11 +90,6 @@ Refere-se ao grau de dependência entre classes/módulos.
 ### 🔹 O — **Open/Closed Principle**  
 > Entidades (classes, métodos, módulos) devem estar **abertas para extensão** e **fechadas para modificação**.
 > Geralmente feita por classes abstratas e interfaces
----
-
-### 🔹 L — **Liskov Substitution Principle**  
-> Subtipos devem poder substituir seus tipos base **sem alterar o comportamento esperado** do programa.  
-> Exemplo: Se `Retângulo` herda de `Forma`, ele deve poder ser usado onde `Forma` é esperado, sem causar efeitos colaterais.
 
 ---
 
@@ -115,6 +115,21 @@ Refere-se ao grau de dependência entre classes/módulos.
 > Fale apenas com seus amigos, não com os amigos dos seus amigos, mantendo o código mais encapsulado e fácil de manter.
 
 ---
+
+## 📅 12/08
+
+### ✅ Tópicos abordados:
+- SOLID (L)
+- 
+
+---
+
+### 🔹 L — **Liskov Substitution Principle**  
+> Subtipos devem poder substituir seus tipos base **sem alterar o comportamento esperado** do programa.  
+> Exemplo: Se `Retângulo` herda de `Forma`, ele deve poder ser usado onde `Forma` é esperado, sem causar efeitos colaterais.
+
+---
+
 
 ## ✨ Observações
 > Esse repositório é atualizado conforme o andamento da disciplina e novos conteúdos são introduzidos.
