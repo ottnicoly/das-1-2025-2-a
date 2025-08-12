@@ -60,23 +60,12 @@ Refere-se ao grau de dependência entre classes/módulos.
 ## 📅 05/08
 
 ### ✅ Tópicos abordados:
-- SOLID
+- SOLID (S,I)
 
 ---
 
 ### 🔹 S — **Single Responsibility Principle**  
 > Uma classe, método ou função deve ter apenas **uma única responsabilidade** ou razão para mudar.
-
----
-
-### 🔹 O — **Open/Closed Principle**  
-> Entidades (classes, métodos, módulos) devem estar **abertas para extensão** e **fechadas para modificação**.
-
----
-
-### 🔹 L — **Liskov Substitution Principle**  
-> Subtipos devem poder substituir seus tipos base **sem alterar o comportamento esperado** do programa.  
-> Exemplo: Se `Retângulo` herda de `Forma`, ele deve poder ser usado onde `Forma` é esperado, sem causar efeitos colaterais.
 
 ---
 
@@ -86,9 +75,44 @@ Refere-se ao grau de dependência entre classes/módulos.
 
 ---
 
+## 📅 11/08
+
+### ✅ Tópicos abordados:
+- SOLID (O,D)
+
+---
+
+### 🔹 O — **Open/Closed Principle**  
+> Entidades (classes, métodos, módulos) devem estar **abertas para extensão** e **fechadas para modificação**.
+> Geralmente feita por classes abstratas e interfaces
+---
+
+### 🔹 L — **Liskov Substitution Principle**  
+> Subtipos devem poder substituir seus tipos base **sem alterar o comportamento esperado** do programa.  
+> Exemplo: Se `Retângulo` herda de `Forma`, ele deve poder ser usado onde `Forma` é esperado, sem causar efeitos colaterais.
+
+---
+
 ### 🔹 D — **Dependency Inversion Principle**  
-> Módulos de alto nível **não devem depender** de módulos de baixo nível. Ambos devem depender de **abstrações**.  
+> Módulos de alto nível **não devem depender** de módulos de baixo nível. Ambos devem depender de **abstrações**.
+> Uma classe deve depender de uma abstração e não de uma implementação concreta. 
 > Exemplo: Em vez de `ClasseA` depender diretamente de `ClasseB`, ambas dependem de uma **interface comum**.
+
+---
+
+### 🔹 — **Prefira Composição a Herança**
+> Ao usar herança (Funcionário -> Pessoa, Funcionario -> Cliente), estamos criando uma relação fixa onde um Funcionário não pode ser um Cliente. Isso limita a flexibilidade do sistema e, em alguns casos, pode gerar problemas práticos — como ter que cadastrar a mesma pessoa duas vezes no banco de dados (uma vez como cliente e outra como funcionário). Com composição, é possível criar estruturas mais flexíveis. Por exemplo, você poderia ter uma classe Pessoa e associar a ela diferentes papéis (Cliente, Funcionário, Fornecedor), permitindo que a mesma instância de pessoa possua múltiplos papéis ao mesmo tempo, sem duplicar informações.
+
+---
+
+### 🔹 — **Principio de Demeter (Lei do Menor Conhecimento)**
+> Um método deve chamar apenas métodos:
+  - da própria classe,
+  - de objetos passados como parâmetro,
+  - de objetos criados dentro do método,
+  - ou de atributos diretos da classe.
+> Evitar chamadas encadeadas como obj.getA().getB().fazerAlgo(), elas expõem detalhes internos e aumentam o acoplamento.
+> Fale apenas com seus amigos, não com os amigos dos seus amigos, mantendo o código mais encapsulado e fácil de manter.
 
 ---
 
