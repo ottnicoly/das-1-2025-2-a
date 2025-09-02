@@ -133,6 +133,41 @@ Refere-se ao grau de dependência entre classes/módulos.
 
 ---
 
+## 📅 01/09
+### ✅ Tópicos abordados:
+- Caracteristicas da arquitetura
+- Expectativas de um Arquiteto
+
+---
+
+- Caracteristicas da arquitetura = requisitos não funcionais.
+(Disponibilidade, COnfiabilidade, Testabilidade, Escalabilidade, Segurança, Agilidade, Tolerancia a falhas, Elasticidade, Reciperabilidade, Desempenho, Implementabilidade, Capacidade de aprendizagem)
+- Impossivel que um sistema atenda todos os itens, sempre terá que abrir mão de alguma coisa.
+- Decisão arquitetural: escolha da arquitetura que vamos usar.
+- Principios do design: de acordo com a decisão do tipo de arquitetura existe principios de design para seguir. Sempre que possivel utilizar mensageria entre os serviços para manter a arquitetura da forma planejada.
+- 
+
+Expectativas de um arquiteto:
+- cara que toma decisões dificeis
+- analisar a arquietura de forma continua
+- se mantem atualizado com as tendencias
+- exposição e experiencia diversificada
+- manter o padrão
+- ter conhecimento sobre o dominio do negocio
+- habilidades interpessoais
+- lidar com questões politicas
+
+tomar decisões:
+pessoa q vai orientar a equipe, fazer escolhar da tecnologias e argumentar sobre as decisões.
+
+Analisar continuamente a arquitetura
+vai acompanhar e analisar continuamente o sistema e tomar decisões quando preciso mudar algo para manter a vitalidade da arquitetura 
+
+manter-se atualizado com as ultimas tendencias
+
+assegurar a conformidade com as decisões
+é o papel dele garantir que os padrões estão sendo seguidos
+
 
 ## ✨ Observações
 > Esse repositório é atualizado conforme o andamento da disciplina e novos conteúdos são introduzidos.
