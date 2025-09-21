@@ -169,5 +169,53 @@ assegurar a conformidade com as decisões
 
 ---
 
+## 📅 02/09
+### ✅ Tópicos abordados:
+- Pensamento arquitetônico
+
+## Diferença entre Arquitetura e Design
+
+Arquiteto de Software: responsável por analisar os requisitos de negócio, extrair e definir as características da arquitetura, selecionar padrões e estilos arquiteturais adequados ao domínio do problema e estruturar os principais componentes do sistema.
+
+Desenvolvedor/Designer: responsável por detalhar a implementação, criar diagramas de classes para cada componente, projetar interfaces de usuário, além de desenvolver e testar o código-fonte.
+
+Formação do conhecimento de um arquiteto modelo T
+O arquiteto modelo T possui uma formação em duas dimensões:
+
+Amplitude (barra horizontal do T): conhecimento generalista, cobrindo diversas áreas de tecnologia, metodologias, processos e negócios.
+
+Profundidade (barra vertical do T): especialização em uma área específica, com domínio técnico aprofundado.
+
+--
+
+## 📅 08/09
+### ✅ Tópicos abordados:
+-Trade-offs
+
+## Trade-offs
+
+toda vez que definimos uma arquitetura n é possivel atribuir todos os requesitos requeridos -> é o famoso "depende" não existe uma função ideal para tudo (não existe resposta certa ou errada)
+Não existe certo ou errado: a mesma característica pode ser boa em um cenário e ruim em outro, dependendo do contexto e dos requisitos do sistema.
+
+## Arquitetura baseada em tópicos
+
+Possui um único padrão (1 para muitos), semelhante a um Publish/Subscribe (Pub/Sub).
+O broker de mensageria recebe a mensagem e a distribui para todos os assinantes do tópico, como se fosse um grupo de WhatsApp.
+(basta ele fazer uma cópia da mensagem e todos vão receber (Broker de menssageria), como se fosse um grupo de whatsapp).
+
+## Características
+
+- Se um tópico “morrer” ou cair, a mensagem não é salva.
+- Diferença em relação ao modelo de stream: no stream é possível voltar e resgatar informações como se fosse um backup, utilizando partitions ou sharding.
+- O tempo de retenção da mensagem geralmente varia de 24h até 7 dias.
+
+## Protocolos comuns
+
+AMQP, MQTT, WebSocket, Redis, RabbitMQ
+
+## Funcionamento
+
+Cada vez que um evento é lançado (ex.: via arquivo JSON), o tópico envia a mesma mensagem para todos os consumidores ao mesmo tempo.
+
 ## ✨ Observações
 > Esse repositório é atualizado conforme o andamento da disciplina e novos conteúdos são introduzidos.
