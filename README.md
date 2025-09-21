@@ -133,10 +133,9 @@ Refere-se ao grau de dependência entre classes/módulos.
 
 ---
 
-## 📅 01/09
+## 📅 26/08
 ### ✅ Tópicos abordados:
 - Caracteristicas da arquitetura
-- Expectativas de um Arquiteto
 
 ---
 
@@ -145,7 +144,14 @@ Refere-se ao grau de dependência entre classes/módulos.
 - Impossivel que um sistema atenda todos os itens, sempre terá que abrir mão de alguma coisa.
 - Decisão arquitetural: escolha da arquitetura que vamos usar.
 - Principios do design: de acordo com a decisão do tipo de arquitetura existe principios de design para seguir. Sempre que possivel utilizar mensageria entre os serviços para manter a arquitetura da forma planejada.
-- 
+
+---
+
+## 📅 01/09
+### ✅ Tópicos abordados:
+- Expectativas de um Arquiteto
+
+---
 
 Expectativas de um arquiteto:
 - cara que toma decisões dificeis
