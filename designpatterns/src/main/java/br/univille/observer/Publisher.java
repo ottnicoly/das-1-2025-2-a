@@ -17,9 +17,11 @@ public class Publisher {
         this.mainState = mainState;
     }
 
+    //inscreve um assinante na lista de assinantes
     public void subscribe(Subscriber assinante){
-        subscribers.add(assinante);
+        subscribers.add(assinante);  
     }
+    //notifica todo mundo da mensagem nova
     public void notifySubscribers(){
         for(Subscriber umAssinante: subscribers){
             umAssinante.update(mainState);
