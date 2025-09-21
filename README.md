@@ -161,6 +161,13 @@ manter-se atualizado com as ultimas tendencias
 assegurar a conformidade com as decisões
 é o papel dele garantir que os padrões estão sendo seguidos
 
+### DevOps
+
+- o que é ? É uma medodologia que de alguma maneira entrega valor (Funcionalidades) para o meu cliente da forma mais rápida.
+- DevOps como cultura: todos precisam trabalhar juntos para manter um sistema funcionando
+- Equipe DevOps: quando nem todos os devs tem o conhecimento em infra
+
+---
 
 ## ✨ Observações
 > Esse repositório é atualizado conforme o andamento da disciplina e novos conteúdos são introduzidos.
