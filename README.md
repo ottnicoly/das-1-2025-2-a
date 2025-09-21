@@ -190,7 +190,7 @@ Profundidade (barra vertical do T): especialização em uma área específica, c
 
 ## 📅 08/09
 ### ✅ Tópicos abordados:
--Trade-offs
+- Trade-offs
 
 ## Trade-offs
 
@@ -216,6 +216,39 @@ AMQP, MQTT, WebSocket, Redis, RabbitMQ
 ## Funcionamento
 
 Cada vez que um evento é lançado (ex.: via arquivo JSON), o tópico envia a mesma mensagem para todos os consumidores ao mesmo tempo.
+
+Fila (Queue)
+
+Segue o modelo FIFO (First In, First Out): o primeiro a entrar é o primeiro a sair.
+
+Operações principais:
+Enqueue → inserir uma mensagem na fila.
+Dequeue → remover uma mensagem da fila.
+
+## Funcionamento
+
+Existe um sender (quem envia) e um receiver (quem consome).
+
+As mensagens são organizadas em ordem e entregues na mesma sequência em que foram recebidas.
+
+A fila funciona como um buffer obrigatório: salva a mensagem antes de entregá-la.
+
+O consumidor geralmente utiliza polling (busca ativa) para ler as mensagens da fila.
+
+## Implementações comuns
+
+RabbitMQ, AWS SQS, Azure Service Bus
+
+## Desacoplamento
+
+A fila promove desacoplamento entre quem envia e quem recebe a mensagem.
+
+Porém, ao adicionar uma nova funcionalidade (ex.: outro consumidor), pode ser necessário alterar significativamente o sistema.
+
+## Comparação com Tópicos (Pub/Sub)
+
+Fila: quando adicionamos uma nova funcionalidade, pode ser necessário modificar a aplicação para lidar com a mudança.
+
 
 ## ✨ Observações
 > Esse repositório é atualizado conforme o andamento da disciplina e novos conteúdos são introduzidos.
