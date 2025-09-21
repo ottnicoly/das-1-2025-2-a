@@ -249,6 +249,9 @@ Porém, ao adicionar uma nova funcionalidade (ex.: outro consumidor), pode ser n
 
 Fila: quando adicionamos uma nova funcionalidade, pode ser necessário modificar a aplicação para lidar com a mudança.
 
+## fan-out
+
+envia a mensagem e ela é replicada automaticamente para múltiplos consumidores
 
 ## ✨ Observações
 > Esse repositório é atualizado conforme o andamento da disciplina e novos conteúdos são introduzidos.
