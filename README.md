@@ -21,8 +21,6 @@ https://refactoring.guru/design-patterns
 - Coesão
 - Acoplamento
 
------
-
 ### 🔹 Abstração
 Transformar um problema real do cliente em um sistema que supra suas necessidades. É o processo de modelar apenas os aspectos relevantes do problema, omitindo os detalhes desnecessários.
 
@@ -70,8 +68,6 @@ Refere-se ao grau de dependência entre classes/módulos.
 ### ✅ Tópicos abordados:
 - SOLID (S,I)
 
----
-
 ### 🔹 S — **Single Responsibility Principle**  
 > Uma classe, método ou função deve ter apenas **uma única responsabilidade** ou razão para mudar.
 
@@ -87,8 +83,6 @@ Refere-se ao grau de dependência entre classes/módulos.
 
 ### ✅ Tópicos abordados:
 - SOLID (O,D)
-
----
 
 ### 🔹 O — **Open/Closed Principle**  
 > Entidades (classes, métodos, módulos) devem estar **abertas para extensão** e **fechadas para modificação**.
@@ -123,9 +117,6 @@ Refere-se ao grau de dependência entre classes/módulos.
 
 ### ✅ Tópicos abordados:
 - SOLID (L)
-- 
-
----
 
 ### 🔹 L — **Liskov Substitution Principle**  
 > Subtipos devem poder substituir seus tipos base **sem alterar o comportamento esperado** do programa.  
@@ -136,8 +127,6 @@ Refere-se ao grau de dependência entre classes/módulos.
 ## 📅 26/08
 ### ✅ Tópicos abordados:
 - Caracteristicas da arquitetura
-
----
 
 - Caracteristicas da arquitetura = requisitos não funcionais.
 (Disponibilidade, COnfiabilidade, Testabilidade, Escalabilidade, Segurança, Agilidade, Tolerancia a falhas, Elasticidade, Reciperabilidade, Desempenho, Implementabilidade, Capacidade de aprendizagem)
@@ -150,8 +139,6 @@ Refere-se ao grau de dependência entre classes/módulos.
 ## 📅 01/09
 ### ✅ Tópicos abordados:
 - Expectativas de um Arquiteto
-
----
 
 Expectativas de um arquiteto:
 - cara que toma decisões dificeis
