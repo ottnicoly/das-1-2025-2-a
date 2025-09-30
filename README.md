@@ -253,5 +253,16 @@ Fila: quando adicionamos uma nova funcionalidade, pode ser necessário modificar
 
 envia a mensagem e ela é replicada automaticamente para múltiplos consumidores
 
+# 2° Bimestre
+
+## 📅 29/09
+
+## circuit braker
+
+proteger a comunicação entre sistemas
+estados: closed, open, half-open
+
+quando ta td bem fica no fechada, quando da erro vai pro aberto, mas de tempos em tempos tenta ir para o meio aberto para ver se ele pode fechar ou se tem que voltar para o aberto.
+
 ## ✨ Observações
 > Esse repositório é atualizado conforme o andamento da disciplina e novos conteúdos são introduzidos.
