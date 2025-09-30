@@ -257,7 +257,7 @@ envia a mensagem e ela é replicada automaticamente para múltiplos consumidores
 
 ## 📅 29/09
 
-## circuit braker
+## circuit breaker
 
 proteger a comunicação entre sistemas
 estados: closed, open, half-open
