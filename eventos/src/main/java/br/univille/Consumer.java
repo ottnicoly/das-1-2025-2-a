@@ -1,5 +1,10 @@
 package br.univille;
 
+import com.azure.core.amqp.AmqpTransportType;
+import com.azure.messaging.servicebus.ServiceBusClientBuilder;
+import com.azure.messaging.servicebus.ServiceBusProcessorClient;
+import com.azure.messaging.servicebus.models.ServiceBusReceiveMode;
+
 public class Consumer {
 
     public static void main(String[] args){
