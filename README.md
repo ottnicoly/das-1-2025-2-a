@@ -257,12 +257,210 @@ envia a mensagem e ela é replicada automaticamente para múltiplos consumidores
 
 ## 📅 29/09
 
-## circuit breaker
+⚡ Circuit Breaker
 
 proteger a comunicação entre sistemas
 estados: closed, open, half-open
 
+O Circuit Breaker é um padrão de resiliência que protege a aplicação contra falhas em serviços externos. Ele funciona como um disjuntor elétrico: detecta problemas e interrompe chamadas para evitar sobrecarregar o sistema.
+
+🔌 Estados do Circuito
+
+Closed (Fechado)
+O comportamento é normal. Todas as requisições passam livremente.
+
+Open (Aberto)
+O serviço apresentou falhas. As chamadas são bloqueadas para evitar insistência em algo que está indisponível.
+
+Half-Open (Meio Aberto)
+Após um tempo, o sistema testa novamente com algumas requisições:
+
+Se funcionar → volta para Closed
+
+Se falhar → retorna para Open
+
+Esse padrão evita cascatas de erros e melhora a resiliência do sistema em cenários de instabilidade.
 quando ta td bem fica no fechada, quando da erro vai pro aberto, mas de tempos em tempos tenta ir para o meio aberto para ver se ele pode fechar ou se tem que voltar para o aberto.
+
+📚 CQRS (Command Query Responsibility Segregation)
+
+O CQRS separa as operações de escrita (Command) das operações de leitura (Query).
+
+🎯 Benefícios
+
+Otimização independente para leitura e escrita.
+
+Modelos diferentes para cada operação.
+
+Banco de leitura pode ser rápido e desnormalizado; banco de escrita pode focar em regras e consistência.
+
+⚠️ Desafios
+
+Maior complexidade.
+
+A leitura pode apresentar um pequeno delay, dependendo de como a sincronização é feita.
+
+🔄 Retry Pattern
+
+O Retry é usado para lidar com falhas temporárias, como instabilidades de rede ou serviços externos lentos.
+
+⚙️ O que ele faz?
+
+Reexecuta uma operação falha após um tempo de espera (delay).
+
+📌 Configurações importantes
+
+Número máximo de tentativas
+
+Tempo entre cada tentativa
+
+Ação caso todas falhem (log, alerta, fallback etc.)
+
+Resultado: um sistema mais confiável contra falhas momentâneas.
+
+🧶 Big Ball of Mud (Grande Bola de Lama)
+
+É o nome dado a sistemas mal organizados, sem padrões ou separação clara de responsabilidades.
+
+Características
+
+Código bagunçado e acoplado
+
+Muitas dependências entre partes
+
+Difícil de entender e manter
+
+Mudanças em um ponto quebram outros
+
+Normalmente surge por falta de planejamento ou acúmulo de dívida técnica.
+
+🧱 Arquitetura Unitária (Monolítica)
+
+A aplicação funciona como uma única unidade, com todos os componentes integrados.
+
+✔️ Vantagens
+
+Estrutura simples
+
+Fácil de começar
+
+Menos complexidade técnica
+
+❌ Desvantagens
+
+Pouca escalabilidade
+
+Manutenção difícil conforme cresce
+
+Alto acoplamento entre componentes
+
+Ideal para projetos pequenos ou de início rápido.
+
+🏛️ Arquitetura em Camadas (Layered / N-tier)
+
+É uma das arquiteturas mais comuns, organizada em camadas com responsabilidades separadas, como:
+
+Apresentação
+
+Negócio
+
+Persistência
+
+Banco de dados
+
+💡 Características
+
+Simples de implementar
+
+Baixo custo
+
+Comunicação geralmente de cima para baixo (camadas fechadas)
+
+Ou mais flexível (camadas abertas)
+
+⚠️ Problemas comuns
+
+Monolítica por natureza
+
+Baixa escalabilidade
+
+Dificuldade de testes e manutenção conforme cresce
+
+Antipadrão Sinkhole: camadas apenas repassam dados sem lógica real
+
+Boa escolha para projetos simples ou em fase inicial.
+
+🔁 Arquitetura em Pipeline
+
+O sistema é dividido em uma sequência de etapas independentes. Cada estágio recebe dados, processa e passa adiante.
+
+⭐ Vantagens
+
+Alta coesão por estágio
+
+Baixo acoplamento
+
+Cada etapa pode ser trocada, escalada ou paralelizada
+
+Ótimo para fluxos de processamento
+
+⚠️ Desafios
+
+Um estágio lento vira gargalo
+
+Fluxo pouco flexível para lógicas com ramificações
+
+Latência maior quando existem muitas etapas
+
+Usado em ETL, processamento de dados, compiladores etc.
+
+🧩 Arquitetura Microkernel
+
+Divide o sistema em:
+
+Núcleo (Kernel) → faz só o essencial
+
+Plugins/Módulos → adicionam funcionalidades
+
+✔️ Benefícios
+
+Extensível e modular
+
+Núcleo estável
+
+Ideal para produtos com variações (IDEs, servidores de aplicação etc.)
+
+❌ Desafios
+
+Complexidade na comunicação núcleo ↔ plugins
+
+Cuidado com compatibilidade entre módulos
+
+Pode haver impacto de performance ao carregar muitos plugins
+
+🧬 Arquitetura de Microsserviços
+
+O sistema é dividido em serviços pequenos, independentes e focados em responsabilidades específicas.
+
+✨ Benefícios
+
+Escalabilidade por serviço
+
+Deploy independente
+
+Equipes autônomas
+
+Liberdade de tecnologia (cada serviço pode ter seu próprio banco, linguagem etc.)
+
+⚠️ Complexidade maior
+
+Necessita observabilidade (logs, traces, métricas)
+
+Falhas distribuídas → precisa de resiliência
+
+Comunicação entre serviços pode ser complexa
+
+Ideal para sistemas grandes, com crescimento contínuo e equipes distribuídas.
 
 ## ✨ Observações
 > Esse repositório é atualizado conforme o andamento da disciplina e novos conteúdos são introduzidos.
